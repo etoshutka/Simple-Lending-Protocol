@@ -134,20 +134,6 @@ slice helper::addr_none() asm "b{00} PUSHSLICE";
 
     return();
     }
-{-
-    if (op == op::transfer_notification) {
-        load_data();
-
-        slice jetton_wallet_addres = in_msg_body~load_msg_addr();
-
-        throw_unless(333, equal_slices(sender_address,borrower_address));
-
-        send_deposit_and_borrow(my_address(), amount, jetton_wallet_addres);
-
-        ;; receive_deposit(sender_address, amount);
-        return();
-    }
--}
 }
 
 
