@@ -1,0 +1,15 @@
+;; ИНСТРУКЦИЯ ПО СБОРКЕ : 
+;; npm i 
+;; npx blueprint build --all
+;; указываем мнемонику в .env в форме WALLET_MNEMONIC = " your mnemonic "
+;; npx blueprint run --testnet --mnemonic <название скрипта из папки scripts без <> >
+;; example: npx blueprint run --testnet --mnemonic deployJettonTon
+
+
+;; описание действия скриптов - 
+;; 1. deployJetton - деплой контракта
+;; 2. sendDeposit - внос жетонов, получение токена
+;; 3. sendMaintain - вывод всех тон с контракта
+;; 4. getLastBorrower - get method для последнего получившего токены 
+;; 5. getContractBalance - get method для получения баланса контракта
+;; 6. sendReceive - возврат токенов , получение ТОН ( в разработке ... )
